@@ -190,7 +190,7 @@ td:hover{
                     die("Connection failed: " . mysqli_connect_error());
                 }
                 
-                $sql = "CREATE TABLE `urls`.`$link` ( `id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT , `number` TEXT NOT NULL , `plusnumber` TEXT NOT NULL , `string` TEXT NOT NULL , `text` TEXT NOT NULL , `onlychoise` TEXT NOT NULL , `multichoise` TEXT NOT NULL , UNIQUE `id` (`id`)) ENGINE = InnoDB;";
+                $sql = "CREATE TABLE `std_971`.`$link` ( `id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT , `number` TEXT NOT NULL , `plusnumber` TEXT NOT NULL , `string` TEXT NOT NULL , `text` TEXT NOT NULL , `onlychoise` TEXT NOT NULL , `multichoise` TEXT NOT NULL , UNIQUE `id` (`id`)) ENGINE = InnoDB;";
                 if (mysqli_query($conn, $sql)) {
                     echo "<script> alert('Создано БД для адреса ".$link."')</script>";
                     //return( require 'index.php');
@@ -215,7 +215,7 @@ td:hover{
                 $connection = mysqli_connect('std-mysql', 'std_971', '123321rufina','std_971'); // коннект с сервером бд
                 if( mysqli_connect_error() ) // проверяем корректность подключения 
                     echo 'Ошибка подключения к БД: '.mysqli_connect_error();
-                    $result = mysqli_query($connection, "SHOW TABLES FROM urls;"); // запрос на выборку
+                    $result = mysqli_query($connection, "SHOW TABLES FROM std_971;"); // запрос на выборку
                     if(!$result)
                     {
                         echo('error');

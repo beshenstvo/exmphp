@@ -202,7 +202,7 @@ td:hover{
             <div>
                 <button type="submit" name='submit'>Отправить форму</button>
             </div>
-            <div >
+            <div style="display: none">
                 <input name="hidefilename" type="text" value="<?php echo($filename = ltrim( $_SERVER['REQUEST_URI'], '/') ); ?>">
             </div>
         </form>

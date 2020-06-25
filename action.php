@@ -1,7 +1,7 @@
 <?php 
  if($_POST['hidefilename']){
      //$filename = ltrim( $_SERVER['REQUEST_URI'], '/');
-    echo $_POST['hidefilename'];
+    //echo $_POST['hidefilename'];
     rename($_POST['hidefilename'], "expert.php");
 }else{
     echo('NONE');
@@ -126,6 +126,6 @@ echo('<form method="GET">
 <a href="/?index=1">На главную страницу</a>
 </form>');
 if($_GET['index'] == 1){
-    header('Location: index.pnp');
+    header('Location: http://exmphp.std-971.ist.mospolytech.ru/index.php');
 }
 ?>
