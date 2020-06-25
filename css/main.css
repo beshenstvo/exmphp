@@ -1,0 +1,96 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.hover{
+    padding: 0.4rem;
+}
+.hover:hover{
+    background-color: rgba(240, 248, 255, 0.274);
+}
+.menu{
+    position: fixed;
+    background-color: #273d46;
+}
+.menu div{
+    padding: 1rem;
+}
+.menu div:hover{
+    background-color: rgba(240, 248, 255, 0.274);
+}
+.menu div a{
+    color: white !important;
+}
+header{
+    text-align: center;
+    background-color: #273d46;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    color: aliceblue;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.active{
+    border-bottom: 1px solid white;
+}
+header div {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+footer{
+    bottom: 0%;
+    padding: 1rem;
+    text-align: center;
+    background-color: #273d46;
+    left: 0%;
+    color: white;
+    width: 100%;
+    position: fixed;
+}
+
+main{
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+    .logo{
+        width: auto;
+        max-height: 50px;
+        margin-right: 20px;
+    }
+table{
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+tr{
+    
+}
+td{
+    padding: 1rem;
+   border: 1px solid black;
+}
+.block{
+    display: inline-block;
+    margin: 20px;
+    font-size: 20px;
+    box-shadow: 0 0 10px 1px black;
+    padding: 1rem;
+}
+.block2{
+    margin-top: 40px;
+    font-size: 25px;
+    padding: 1rem;
+    box-shadow: 0 0 40px 5px black;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
